@@ -1,26 +1,37 @@
 <% layout('boilerplate') -%>
-<div class="container">
-   
-   <div>
-	<div>
+<div class="row">
+    <div class="row">
+        <div class="register-progress-bubbles clearfix">
+            <div class="center-line"></div>
+            <div class="bubbles over">1</div>
+            <div class="bubbles">2</div>
+            <div class="bubbles">3</div>
+        </div>
+    </div>
+    <div style="margin-bottom: 20px">
+        <div class="row">
+            <h1>Primary Profession</h1>
 
-		<h1>Primary</h1>
-		<p>desdc</p>
-		<input type="text" name="yoga_instructor"/>
-		<p>in</p>
-		<input type="text" name="yoga_instructor_in"/>
-	</div>
-	<div>
-
-		<h1>Primary</h1>
-		<p>desdc</p>
-		<input type="text" name="yoga_instructor"/>
-		<p>in</p>
-		<input type="text" name="yoga_instructor_in"/>
-	</div>
-	<hr>
-	<div>
-		<button>process to profile</button>
-	</div>
-   </div>
+            <p>Add what are you below. You may get suggestions as yo type or you can add your own.</p>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label class="sr-only" for="yoga_instructor">Yoga Instructor</label>
+                <input type="text" class="form-control" id="yoga_instructor" placeholder="Yoga Instructor" data-placement="right" data-toggle="tooltip" data-original-title="Found 23 sites to post you on. <span style='color:orange'>Details</span>" data-html="true" data-trigger="hover" required="true"/>
+            </div>
+            <div class="col-md-1">
+                <p>In</p>
+            </div>
+            <div class="form-group col-md-2">
+                <label class="sr-only" for="yoga_instructor_in">94043</label>
+                <input type="text" class="form-control" id="yoga_instructor_in" placeholder="94043" required="true">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-default" id="professional">PROCEED TO PROFILE</button>
+            </div>
+        </div>
+    </div>
 </div>
+<% script('js/user.js') -%>
